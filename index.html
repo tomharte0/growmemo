@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowMemo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Growmemo</h1>
+    </header>
+    <div class="tile-container">
+        <!-- Kacheln werden hier durch JavaScript eingefügt -->
+    </div>
+
+    <!-- Aktualisiertes JavaScript zum Laden der JSON-Datei und Erstellen der Kacheln -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('data.json')  // Angenommen, die Datei heißt 'data.json'
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.querySelector('.tile-container');
+                    data.forEach(tile => {
+                        const div = document.createElement('div');
+                        div.className = 'tile';
+                        // Neuer HTML-Aufbau für getrennte Bereiche für Bild und Titel
+                        div.innerHTML = `
+                            <div class="image-container">
+                                <a href="${tile.url}" target="_blank" rel="noopener noreferrer">
+                                <img src="${tile.image}" alt="${tile.title}">
+                                </a>
+                            </div>
+                            <div class="title-container">
+                                <a href="${tile.url}" target="_blank" rel="noopener noreferrer">
+                                    <span>${tile.title}</span>
+                                </a>
+                            </div>
+                        `;
+                        container.appendChild(div);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading the data:', error);
+                    container.innerHTML = '<p>Fehler beim Laden der Daten.</p>'; // Füge Fehlerbehandlung hinzu
+                });
+        });
+    </script>
+</body>
+</html>
