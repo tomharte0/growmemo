@@ -18,7 +18,4 @@ echo.
 echo ich bin gleich wieder weg :-D
 echo.
 timeout 30 > nul
-cls
-echo Ciao...
-timeout 3 > nul
 exit
