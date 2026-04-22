@@ -1,1 +1,6 @@
-cntnt
+@echo off
+chcp 65001 > nul
+
+echo hallo, ich bin eine batch aus dem internet
+
+pause
