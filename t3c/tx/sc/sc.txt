@@ -13,7 +13,7 @@ echo//      //   //////  //      //     //      ///////  //      ///   ////////
 
 echo.
 
-echo hallo, ich bin DIESMAL nur ein harmloses Script aus dem Internet
+echo ich bin DIESMAL nur ein harmloses Script aus dem Internet
 echo.
 echo ich bin gleich wieder weg :-D
 echo.
