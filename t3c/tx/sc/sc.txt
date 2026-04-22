@@ -1,6 +1,20 @@
 @echo off
 chcp 65001 > nul
 
-echo hallo, ich bin eine batch aus dem internet
 
-pause
+echo     **       ******  **      ** ********** **     ** ****     **   ******** 
+echo    ****     **////**/**     /**/////**/// /**    /**/**/**   /**  **//////**
+echo   **//**   **    // /**     /**    /**    /**    /**/**//**  /** **      // 
+echo  **  //** /**       /**********    /**    /**    /**/** //** /**/**         
+echo **********/**       /**//////**    /**    /**    /**/**  //**/**/**    *****
+echo/**//////**//**    **/**     /**    /**    /**    /**/**   //****//**  ////**
+echo/**     /** //****** /**     /**    /**    //******* /**    //*** //******** 
+echo//      //   //////  //      //     //      ///////  //      ///   ////////  
+
+echo.
+
+echo hallo, ich bin DIESMAL nur ein harmloses Script aus dem Internet
+echo.
+echo ich bin gleich wieder weg :-D
+echo.
+timeout 30 > nul
